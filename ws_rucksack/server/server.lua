@@ -18,7 +18,7 @@ Citizen.CreateThread(function()
 
                     CachedWeights[xPlayer.source] = currWeight
                     BackPackUsed[xPlayer.source] = true
-                    xPlayer.setMaxWeight((currWeight + backpack["weight"]))
+                    xPlayer.setMaxWeight((currWeight + v["weight"]))
                     TriggerClientEvent("ws_notify", xPlayer.source, "error", "information", "Du hast einen Rucksack angezogen", 5000)
                 end
             end
